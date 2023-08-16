@@ -1,11 +1,11 @@
-// import { process } from '/env'
+import { process } from '/env'
 import { Configuration, OpenAIApi } from 'openai'
 
 const setupInputContainer = document.getElementById('setup-input-container')
 const movieBossText = document.getElementById('movie-boss-text')
 
 const configuration = new Configuration({
-  apiKey: import.meta.env.__APP_ENV__
+  apiKey: process.env.OPENAI_API_KEY
 })
 
 const openai = new OpenAIApi(configuration)
