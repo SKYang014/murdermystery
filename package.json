@@ -1,5 +1,6 @@
 {
   "name": "project",
+  "type": "module",
   "dependencies": {
     "openai": "3.1.0"
   },
